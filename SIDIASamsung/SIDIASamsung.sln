@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIDIASamsung", "SIDIASamsung.csproj", "{C1565834-4708-D083-F938-E5B2CD4BA720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIDIASamsung.Editor", "SIDIASamsung.Editor.csproj", "{A399563F-7CE3-E7FE-9C15-CC4C8B5291E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1565834-4708-D083-F938-E5B2CD4BA720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1565834-4708-D083-F938-E5B2CD4BA720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1565834-4708-D083-F938-E5B2CD4BA720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1565834-4708-D083-F938-E5B2CD4BA720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A399563F-7CE3-E7FE-9C15-CC4C8B5291E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A399563F-7CE3-E7FE-9C15-CC4C8B5291E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A399563F-7CE3-E7FE-9C15-CC4C8B5291E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A399563F-7CE3-E7FE-9C15-CC4C8B5291E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
