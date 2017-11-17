@@ -224,6 +224,7 @@
     <Compile Include="Assets\_Assets\Scripts\CanvasMenu.cs" />
     <Compile Include="Assets\_Assets\Scripts\FakeCannon.cs" />
     <Compile Include="Assets\_Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\_Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\_Assets\Scripts\VertexColor.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Community\ForceShield\ForceShieldDestroyBall.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Community\ForceShield\ForceShieldImpactDetection.cs" />

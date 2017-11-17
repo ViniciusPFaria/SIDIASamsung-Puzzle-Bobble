@@ -21,10 +21,9 @@ public class FakeCannon : MonoBehaviour {
         InitiateShot();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-
-        if (Input.GetMouseButtonDown(0) && currentBullet != null)
+    public void Shoot()
+    {
+        if (currentBullet != null)
         {
             //determina a direção da bala
             Vector2 dir = aim.transform.position - shotPlaceHolder.transform.position;
@@ -34,9 +33,8 @@ public class FakeCannon : MonoBehaviour {
             currentBullet.GetComponent<Bubble>().stopped += InitiateShot;
 
             currentBullet = null;
-
         }
-	}
+    }
 
     private void InitiateShot()
     {

@@ -22,13 +22,7 @@ public class BubbleManager : MonoBehaviour
     
     [SerializeField]
     private GameObject bubblePrefab;
-
-    public void NewLevel()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
-    }
-
-
+    
     public void genInitMatrix(int lines, int column)
     {
         
@@ -78,7 +72,7 @@ public class BubbleManager : MonoBehaviour
         CleanLooseParts();
     }
 
-    [ContextMenu("gerar")]
+    //verifica quais peças estão seguras e quias vão ser eliminadas
     public void CleanLooseParts()
     {
         ResetChainSafe();
@@ -97,7 +91,7 @@ public class BubbleManager : MonoBehaviour
 
     private IEnumerator DestroyLooseParts()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         for (int i = 0; i < relationMatrix.GetLength(0); i++)
         {
             for (int j = 0; j < relationMatrix.GetLength(1); j++)
@@ -157,20 +151,12 @@ public class BubbleManager : MonoBehaviour
 
     public IEnumerator DestroyHitList(List<Bubble> destroyChainList)
     {
-        yield return new WaitForSeconds(1);
-        print(destroyChainList.Count);
+        yield return new WaitForSeconds(0.1f);
         if (destroyChainList.Count > 2)
         {
             foreach (Bubble bubble in destroyChainList)
             {
                 bubble.DestryMySelf();
-            }
-        }
-        else if (destroyChainList.Count > 0)
-        {
-            foreach (Bubble bubble in destroyChainList)
-            {
-                bubble.GetComponent<SpriteRenderer>().color = Color.white;
             }
         }
 

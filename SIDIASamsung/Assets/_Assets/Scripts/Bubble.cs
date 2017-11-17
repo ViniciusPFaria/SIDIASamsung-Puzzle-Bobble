@@ -79,7 +79,7 @@ public class Bubble : MonoBehaviour
                 {
                     cacheRelationMatrix[StabelI, StabelJ].isStable = true;
                     cacheRelationMatrix[StabelI, StabelJ].GetComponent<SpriteRenderer>().color = Color.green;
-                    yield return new WaitForSeconds(0.05f);
+                    yield return new WaitForSeconds(0.01f);
                     StartCoroutine(cacheRelationMatrix[StabelI, StabelJ].SafeChain());
 
                 }
@@ -148,13 +148,11 @@ public class Bubble : MonoBehaviour
     {
         Bubble[,] cacheRelationMatrix = BubbleManager.INSTANCE.relationMatrix;
 
-
+        //percore a lista para todos os lados para encontrar bolhas do mesmo tipo
         for (int yDirection = posInY - 1; yDirection <= posInY + 1; yDirection++)
         {
             for (int xDirection = posInX - 1; xDirection <= posInX + 1; xDirection++)
             {
-
-
                 int StabelI = Mathf.Min(Mathf.Max(0, yDirection), cacheRelationMatrix.GetLength(0) - 1);//garantia que não vai estoura o index
                 int StabelJ = Mathf.Min(Mathf.Max(0, xDirection), cacheRelationMatrix.GetLength(1) - 1);
 
@@ -179,7 +177,7 @@ public class Bubble : MonoBehaviour
                 {
                     destroyChainList.Add(cacheRelationMatrix[StabelI, StabelJ]);
 
-                    yield return new WaitForSeconds(0.1f);
+                    yield return new WaitForSeconds(0.01f);
                     StartCoroutine(cacheRelationMatrix[StabelI, StabelJ].GetHitList());
 
                 }
