@@ -855,6 +855,8 @@
     <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Templates\UIDefault.shader" />
     <None Include="Assets\AmplifyShaderEditor\Readme.txt" />
     <None Include="Assets\_Assets\Shaders\Overlay.shader" />
+    <None Include="Assets\_Assets\Shaders\SelfIlluminated.shader" />
+    <None Include="Assets\_Assets\Shaders\TextureAndNormalMap.shader" />
     <None Include="Assets\_Assets\Shaders\VertexAnim.shader" />
     <None Include="Assets\_Assets\Shaders\VertexColor.shader" />
   </ItemGroup>
