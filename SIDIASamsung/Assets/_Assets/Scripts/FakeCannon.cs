@@ -38,6 +38,12 @@ public class FakeCannon : MonoBehaviour {
 
     private void InitiateShot()
     {
+        StartCoroutine(DelayShot());
+    }
+
+    private IEnumerator DelayShot()
+    {
+        yield return new WaitForSeconds(1.2f);
         currentBullet = Instantiate(bubblePrefab, shotPlaceHolder.transform.position, Quaternion.identity);
     }
 }

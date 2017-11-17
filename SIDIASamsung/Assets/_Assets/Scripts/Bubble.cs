@@ -79,7 +79,7 @@ public class Bubble : MonoBehaviour
                 {
                     cacheRelationMatrix[StabelI, StabelJ].isStable = true;
                     cacheRelationMatrix[StabelI, StabelJ].GetComponent<SpriteRenderer>().color = Color.green;
-                    yield return new WaitForSeconds(0.01f);
+                    yield return new WaitForSeconds(0.12f);
                     StartCoroutine(cacheRelationMatrix[StabelI, StabelJ].SafeChain());
 
                 }

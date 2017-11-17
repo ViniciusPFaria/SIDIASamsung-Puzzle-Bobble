@@ -91,7 +91,7 @@ public class BubbleManager : MonoBehaviour
 
     private IEnumerator DestroyLooseParts()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.2f);
         for (int i = 0; i < relationMatrix.GetLength(0); i++)
         {
             for (int j = 0; j < relationMatrix.GetLength(1); j++)
